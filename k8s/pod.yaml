@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kareemmohamed-pod
+spec:
+  containers:
+  - name: kareemmohamed-container
+    image: codisam/kareemmohamedimg
+    stdin: true
+    tty: true

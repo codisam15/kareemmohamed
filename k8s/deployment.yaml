@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kareemmohamed-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kareemmohamed
+  template:
+    metadata:
+      labels:
+        app: kareemmohamed
+    spec:
+      containers:
+      - name: kareemmohamed-container
+        image: codisam/kareemmohamedimg
+        stdin: true
+        tty: true
